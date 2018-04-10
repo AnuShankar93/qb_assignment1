@@ -2,14 +2,17 @@
     <caption *ngIf="caption">{{ caption }}</caption>
         <thead>
             <tr>
-                <th>Column 1</th>
-                <th>Column 2</th>
+                <th *ngFor="let colhead of model[0] | keys"> {{model.key}}</th>
+                
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Some value</td>
-                <td>Some value</td>
+                <th *ngFor="let colhead of model[0] | keys"> {{model.value}}</th>
             </tr>
         </tbody>
-    </table>
+</table>
+
+<!-- <span *ngFor="let entry of (model | keys)" >           
+    Key: {{entry.key}}, value: {{entry.value}}
+</span> -->

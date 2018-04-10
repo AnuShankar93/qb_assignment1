@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MapComponent} from './map/map.component';
-import { TableComponent } from './table/table.component'
+import { TableComponent } from './table/table.component';
+import { KeysPipe } from'./pipes/key.pipe'
 
 
 
@@ -10,10 +11,11 @@ import { TableComponent } from './table/table.component'
     CommonModule,
     
   ],
-  declarations: [MapComponent,TableComponent],
+  declarations: [MapComponent,TableComponent, KeysPipe],
   exports:[
     MapComponent,
-    TableComponent
+    TableComponent,
+    KeysPipe
  ]
 })
 export class SharedModule { }

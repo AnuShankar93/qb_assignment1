@@ -7,12 +7,14 @@ import { Component,Input,OnInit} from '@angular/core';
  
 })
 export class TableComponent implements OnInit {
-  
- 
- 
-  constructor() { }
+  @Input() model:any;
+   constructor() { }
 
   ngOnInit() {
+    console.log(this.model);
+    //this.check = this.model.shipmentEvents;
+    
+   
   }
 
 }

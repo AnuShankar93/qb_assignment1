@@ -1,2 +1,4 @@
 <p>Contact page</p>
-<app-table></app-table>
+
+<app-table [model]="test"></app-table>
+<p  *ngFor="let entry of test[0] | keys"> {{entry.key}}: {{entry.value}}</p>

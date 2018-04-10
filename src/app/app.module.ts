@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { ContactModule } from './contact/contact.module';
+//import { KeysPipe } from './shared/pipes/key.pipe';
 // import { SharedModule } from './shared/shared.module';
 
 @NgModule({
@@ -18,7 +19,7 @@ import { ContactModule } from './contact/contact.module';
     
   ],
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   bootstrap: [ AppComponent ]
 })
