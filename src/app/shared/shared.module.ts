@@ -8,8 +8,7 @@ import { KeysPipe } from'./pipes/key.pipe'
 
 @NgModule({
   imports: [
-    CommonModule,
-    
+    CommonModule
   ],
   declarations: [MapComponent,TableComponent, KeysPipe],
   exports:[

@@ -11,10 +11,7 @@ export class TableComponent implements OnInit {
    constructor() { }
 
   ngOnInit() {
-    console.log(this.model);
-    //this.check = this.model.shipmentEvents;
-    
-   
+    console.log(this.model);  
   }
 
 }
