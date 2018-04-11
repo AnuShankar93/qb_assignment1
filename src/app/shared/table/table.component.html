@@ -1,14 +1,14 @@
-<table class="table">
+<table class="table" *ngIf ="model.length">
     <caption *ngIf="caption">{{ caption }}</caption>
         <thead>
-            <tr>
-                <th *ngFor="let colhead of model[0] | keys"> {{model.key}}</th>
+            <tr >
+                <th *ngFor="let colhead of model[0] | keys"> {{colhead.key}}</th>
                 
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th > Check</th>
+            <tr *ngFor="let colhead of model | keys">
+                <td *ngFor="let colhead of model | keys"> {{colhead.value|json}}</td>
             </tr>
         </tbody>
 </table>
