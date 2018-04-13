@@ -3,12 +3,11 @@
         <thead>
             <tr >
                 <th *ngFor="let colhead of model[0] | keys"> {{colhead.key}}</th>
-                
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let colhead of model | keys">
-                <td *ngFor="let colhead of model | keys"> {{colhead.value|json}}</td>
+            <tr *ngFor="let row of model">               
+                <td *ngFor="let col of row | keys"> {{row[col.key]}}</td>
             </tr>
         </tbody>
 </table>
