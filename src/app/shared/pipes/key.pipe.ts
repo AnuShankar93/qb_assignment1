@@ -10,7 +10,7 @@ import {Pipe, PipeTransform} from '@angular/core';
         keys.push({ key: key, value: value[key] });
       }
     }
-    console.log(keys);
+   
     return keys;
   }
 }
